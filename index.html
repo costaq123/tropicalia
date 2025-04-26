@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeca Pagodinho - Biografia, Discografia e Linha do Tempo</title>
-
-    <!-- Importação das fontes no head -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
-
-    <!-- Link para o arquivo CSS -->
+    <title>Zeca Pagodinho - Site Oficial</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header class="cabecalho">
         <h1 class="cabecalho__titulo">Zeca Pagodinho</h1>
         <nav class="cabecalho__menu" aria-label="Menu principal">
+            <button class="cabecalho__hamburguer" aria-label="Menu de navegação">
+                <span class="cabecalho__linha"></span>
+                <span class="cabecalho__linha"></span>
+                <span class="cabecalho__linha"></span>
+            </button>
             <ul class="cabecalho__lista">
                 <li class="cabecalho__item"><a class="cabecalho__link" href="#biografia">Biografia</a></li>
                 <li class="cabecalho__item"><a class="cabecalho__link" href="#discografia">Discografia</a></li>
@@ -28,66 +25,36 @@
         </nav>
     </header>
 
-    <main class="conteudo-principal">
-        <section class="conteudo-principal__secao" id="biografia">
-            <h2 class="conteudo-principal__titulo">Quem é Zeca Pagodinho?</h2>
-            <img class="conteudo-principal__imagem" src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Zeca_Pagodinho_em_2010.jpg" alt="Zeca Pagodinho sorrindo durante um show" width="500">
-            <p class="conteudo-principal__paragrafo">
-                Zeca Pagodinho, nascido em 1959 no Rio de Janeiro, é um dos maiores nomes do samba e do pagode no Brasil.
-                Com seu estilo descontraído e letras cheias de humor, conquistou o país e se tornou uma lenda viva da música popular brasileira.
-            </p>
-        </section>
+    <!-- Seções do site -->
+    <section id="biografia">
+        <h2>Biografia</h2>
+        <p>Aqui vai um texto sobre a biografia do Zeca Pagodinho...</p>
+    </section>
 
-        <section class="conteudo-principal__secao" id="discografia">
-            <h2 class="conteudo-principal__titulo">Principais Álbuns</h2>
-            <ul class="conteudo-principal__lista">
-                <li class="conteudo-principal__item"><strong>1986:</strong> Zeca Pagodinho</li>
-                <li class="conteudo-principal__item"><strong>1995:</strong> Samba pras Moças</li>
-                <li class="conteudo-principal__item"><strong>2002:</strong> Deixa a Vida Me Levar</li>
-                <li class="conteudo-principal__item"><strong>2010:</strong> Vida da Minha Vida</li>
-                <li class="conteudo-principal__item"><strong>2021:</strong> Mais Feliz</li>
-            </ul>
-        </section>
+    <section id="discografia">
+        <h2>Discografia</h2>
+        <p>Informações sobre os álbuns e músicas...</p>
+    </section>
 
-        <section class="conteudo-principal__secao" id="linha-do-tempo">
-            <h2 class="conteudo-principal__titulo">Linha do Tempo</h2>
-            <ul class="conteudo-principal__lista">
-                <li class="conteudo-principal__item"><strong>1959:</strong> Nasce em Irajá, Rio de Janeiro.</li>
-                <li class="conteudo-principal__item"><strong>1983:</strong> Estoura com "Camarão que Dorme a Onda Leva".</li>
-                <li class="conteudo-principal__item"><strong>1986:</strong> Lança seu primeiro álbum solo.</li>
-                <li class="conteudo-principal__item"><strong>2002:</strong> Sucesso nacional com "Deixa a Vida Me Levar".</li>
-                <li class="conteudo-principal__item"><strong>2021:</strong> Lança o álbum "Mais Feliz".</li>
-            </ul>
-        </section>
+    <section id="linha-do-tempo">
+        <h2>Linha do Tempo</h2>
+        <p>Detalhes sobre a carreira e evolução de Zeca Pagodinho...</p>
+    </section>
 
-        <section class="conteudo-principal__secao" id="galeria">
-            <h2 class="conteudo-principal__titulo">Galeria de Fotos</h2>
-            <div class="galeria">
-                <img class="galeria__imagem" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Zeca_Pagodinho_2019.jpg" alt="Zeca Pagodinho em palco" width="300">
-                <img class="galeria__imagem" src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Zeca_Pagodinho.jpg" alt="Zeca Pagodinho sorrindo" width="300">
-                <img class="galeria__imagem" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Zeca_Pagodinho_em_show.jpg" alt="Zeca Pagodinho com público" width="300">
-            </div>
-        </section>
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <p>Fotos e vídeos do artista...</p>
+    </section>
 
-        <section class="conteudo-principal__secao" id="contato">
-            <h2 class="conteudo-principal__titulo">Contato</h2>
-            <p class="conteudo-principal__paragrafo">Para mais informações, entre em contato conosco:</p>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-    </main>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Formas de contato com a equipe de Zeca Pagodinho...</p>
+    </section>
 
-    <footer class="rodape">
-        <p class="rodape__texto">
-            Desenvolvido por Nicole e Yasmin. <br>
-            Imagem de Zeca Pagodinho via <a class="rodape__link" href="https://commons.wikimedia.org/wiki/File:Zeca_Pagodinho_em_2010.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.
-        </p>
+    <footer>
+        <p>Desenvolvido por Nicole e Yasmin</p>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>

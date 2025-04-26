@@ -1,63 +1,105 @@
-/* Importação das fontes no head */
+/* Importando as fontes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Corpo */
+/* Estilo geral */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Cabeçalho */
+h1, h2 {
+  font-family: 'Lemon', cursive;
+}
+
+/* Estilo do cabeçalho */
 .cabecalho {
-    background-color: #1E3A8A; /* Azul escuro */
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cabecalho__titulo {
-    font-family: 'Lemon', sans-serif; /* Fonte Lemon para o título */
-    font-size: 3rem;
-    color: #FFD700; /* Dourado */
+  font-size: 2.5rem;
 }
 
 .cabecalho__menu {
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cabecalho__lista {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  list-style: none;
 }
 
 .cabecalho__item {
-    font-size: 1.1rem;
+  margin: 0 15px;
 }
 
 .cabecalho__link {
-    text-decoration: none;
-    color: #FFD700; /* Dourado */
-    font-weight: bold;
-    text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .cabecalho__link:hover {
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff;
-    transition: color 0.3s, border-bottom 0.3s;
+  text-decoration: underline;
 }
 
-/* Conteúd*
+/* Estilo para o botão hamburguer */
+.cabecalho__hamburguer {
+  display: none;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cabecalho__linha {
+  width: 25px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: #fff;
+}
+
+/* Menu fixo */
+.cabecalho--fixo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+/* Estilos para o menu no mobile */
+@media (max-width: 768px) {
+  .cabecalho__hamburguer {
+    display: flex;
+  }
+
+  .cabecalho__lista {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .cabecalho__lista--ativo {
+    display: flex;
+  }
+}
