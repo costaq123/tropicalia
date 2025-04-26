@@ -4,59 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeca Pagodinho - Site Acessível</title>
+    <title>Zeca Pagodinho</title>
+
+    <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Zeca Pagodinho</h1>
-        <nav aria-label="Menu principal">
-            <ul>
-                <li><a href="#biografia">Biografia</a></li>
-                <li><a href="#discografia">Discografia</a></li>
-                <li><a href="#linha-do-tempo">Linha do Tempo</a></li>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Zeca Pagodinho</h1>
+        <nav class="cabecalho__menu" aria-label="Menu principal">
+            <ul class="cabecalho__lista">
+                <li class="cabecalho__item"><a class="cabecalho__link" href="#biografia">Biografia</a></li>
+                <li class="cabecalho__item"><a class="cabecalho__link" href="#discografia">Discografia</a></li>
+                <li class="cabecalho__item"><a class="cabecalho__link" href="#linha-do-tempo">Linha do Tempo</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="biografia">
-            <h2>Quem é Zeca Pagodinho?</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Zeca_Pagodinho_em_2010.jpg"
-                alt="Zeca Pagodinho sorrindo durante um show" width="500">
-            <p>Zeca Pagodinho, nascido em 1959 no Rio de Janeiro, é um dos maiores nomes do samba e do pagode no Brasil.
-                Com seu estilo descontraído e letras cheias de humor e histórias do cotidiano, conquistou o país e se
-                tornou uma lenda viva da música popular brasileira.</p>
+    <main class="conteudo-principal">
+        <section class="conteudo-principal__secao" id="biografia">
+            <h2 class="conteudo-principal__titulo">Quem é Zeca Pagodinho?</h2>
+            <img class="conteudo-principal__imagem" src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Zeca_Pagodinho_em_2010.jpg" alt="Zeca Pagodinho sorrindo durante um show" width="500">
+            <p class="conteudo-principal__paragrafo">
+                Zeca Pagodinho, nascido em 1959 no Rio de Janeiro, é um dos maiores nomes do samba e do pagode no Brasil.
+                Com seu estilo descontraído e letras cheias de humor, conquistou o país e se tornou uma lenda viva da música popular brasileira.
+            </p>
         </section>
 
-        <section id="discografia">
-            <h2>Principais Álbuns</h2>
-            <ul>
-                <li><strong>1986:</strong> Zeca Pagodinho</li>
-                <li><strong>1995:</strong> Samba pras Moças</li>
-                <li><strong>2002:</strong> Deixa a Vida Me Levar</li>
-                <li><strong>2010:</strong> Vida da Minha Vida</li>
-                <li><strong>2021:</strong> Mais Feliz</li>
+        <section class="conteudo-principal__secao" id="discografia">
+            <h2 class="conteudo-principal__titulo">Principais Álbuns</h2>
+            <ul class="conteudo-principal__lista">
+                <li class="conteudo-principal__item"><strong>1986:</strong> Zeca Pagodinho</li>
+                <li class="conteudo-principal__item"><strong>1995:</strong> Samba pras Moças</li>
+                <li class="conteudo-principal__item"><strong>2002:</strong> Deixa a Vida Me Levar</li>
+                <li class="conteudo-principal__item"><strong>2010:</strong> Vida da Minha Vida</li>
+                <li class="conteudo-principal__item"><strong>2021:</strong> Mais Feliz</li>
             </ul>
         </section>
-        <section id="linha-do-tempo">
-            <h2>Linha do Tempo</h2>
-            <ul>
-                <li><strong>1959:</strong> Nasce em Irajá, Rio de Janeiro.</li>
-                <li><strong>1983:</strong> Estoura nacionalmente com a música "Camarão Que Dorme a Onda Leva".</li>
-                <li><strong>1986:</strong> Lança seu primeiro álbum solo.</li>
-                <li><strong>2002:</strong> "Deixa a Vida Me Levar" vira um dos seus maiores sucessos.</li>
-                <li><strong>2021:</strong> Lança álbum "Mais Feliz", mostrando que continua relevante no samba atual.
-                </li>
+
+        <section class="conteudo-principal__secao" id="linha-do-tempo">
+            <h2 class="conteudo-principal__titulo">Linha do Tempo</h2>
+            <ul class="conteudo-principal__lista">
+                <li class="conteudo-principal__item"><strong>1959:</strong> Nasce em Irajá, Rio de Janeiro.</li>
+                <li class="conteudo-principal__item"><strong>1983:</strong> Estoura com "Camarão que Dorme a Onda Leva".</li>
+                <li class="conteudo-principal__item"><strong>1986:</strong> Lança seu primeiro álbum solo.</li>
+                <li class="conteudo-principal__item"><strong>2002:</strong> Sucesso nacional com "Deixa a Vida Me Levar".</li>
+                <li class="conteudo-principal__item"><strong>2021:</strong> Lança o álbum "Mais Feliz".</li>
             </ul>
         </section>
     </main>
 
-    <footer>
-        <p>Site desenvolvido para fins educacionais. Imagem de Zeca Pagodinho via <a
-                href="https://commons.wikimedia.org/wiki/File:Zeca_Pagodinho_em_2010.jpg" target="_blank"
-                rel="noopener noreferrer">Wikimedia Commons</a> (uso permitido).</p>
+    <footer class="rodape">
+        <p class="rodape__texto">
+            Desenvolvido por Nicole e Yasmin. <br>
+            Imagem de Zeca Pagodinho via <a class="rodape__link" href="https://commons.wikimedia.org/wiki/File:Zeca_Pagodinho_em_2010.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.
+        </p>
     </footer>
 </body>
 
