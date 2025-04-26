@@ -1,14 +1,15 @@
+/* Importação das fontes no head */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
-
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/* Corpo */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f9f9f9;
@@ -17,9 +18,9 @@ body {
     padding: 20px;
 }
 
-
+/* Cabeçalho */
 .cabecalho {
-    background-color: #1E3A8A;
+    background-color: #1E3A8A; /* azul escuro */
     color: #ffffff;
     padding: 20px;
     border-radius: 10px;
@@ -27,7 +28,7 @@ body {
 }
 
 .cabecalho__titulo {
-    font-family: 'Lemon', sans-serif;
+    font-family: 'Lemon', sans-serif; /* Fonte Lemon para o título */
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
@@ -44,7 +45,7 @@ body {
 }
 
 .cabecalho__link {
-    color: #FFD700;
+    color: #FFD700; /* dourado */
     text-decoration: none;
     font-weight: bold;
 }
@@ -53,12 +54,12 @@ body {
     text-decoration: underline;
 }
 
-
+/* Conteúdo principal */
 .conteudo-principal {
     margin-top: 30px;
 }
 
-
+/* Seções */
 .conteudo-principal__secao {
     background-color: #ffffff;
     margin-bottom: 30px;
@@ -85,15 +86,21 @@ body {
     border-radius: 10px;
 }
 
-.conteudo-principal__lista {
-    padding-left: 20px;
+/* Galeria */
+.galeria {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.conteudo-principal__item {
-    margin-bottom: 10px;
+.galeria__imagem {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
 }
 
-
+/* Rodapé */
 .rodape {
     margin-top: 40px;
     text-align: center;

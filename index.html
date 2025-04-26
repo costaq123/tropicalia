@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeca Pagodinho</title>
+    <title>Zeca Pagodinho - Biografia, Discografia e Linha do Tempo</title>
+
+    <!-- Importação das fontes no head -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
 
     <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="style.css">
@@ -18,6 +22,8 @@
                 <li class="cabecalho__item"><a class="cabecalho__link" href="#biografia">Biografia</a></li>
                 <li class="cabecalho__item"><a class="cabecalho__link" href="#discografia">Discografia</a></li>
                 <li class="cabecalho__item"><a class="cabecalho__link" href="#linha-do-tempo">Linha do Tempo</a></li>
+                <li class="cabecalho__item"><a class="cabecalho__link" href="#galeria">Galeria</a></li>
+                <li class="cabecalho__item"><a class="cabecalho__link" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -52,6 +58,27 @@
                 <li class="conteudo-principal__item"><strong>2002:</strong> Sucesso nacional com "Deixa a Vida Me Levar".</li>
                 <li class="conteudo-principal__item"><strong>2021:</strong> Lança o álbum "Mais Feliz".</li>
             </ul>
+        </section>
+
+        <section class="conteudo-principal__secao" id="galeria">
+            <h2 class="conteudo-principal__titulo">Galeria de Fotos</h2>
+            <div class="galeria">
+                <img class="galeria__imagem" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Zeca_Pagodinho_2019.jpg" alt="Zeca Pagodinho em palco" width="300">
+                <img class="galeria__imagem" src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Zeca_Pagodinho.jpg" alt="Zeca Pagodinho sorrindo" width="300">
+                <img class="galeria__imagem" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Zeca_Pagodinho_em_show.jpg" alt="Zeca Pagodinho com público" width="300">
+            </div>
+        </section>
+
+        <section class="conteudo-principal__secao" id="contato">
+            <h2 class="conteudo-principal__titulo">Contato</h2>
+            <p class="conteudo-principal__paragrafo">Para mais informações, entre em contato conosco:</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <input type="submit" value="Enviar">
+            </form>
         </section>
     </main>
 
