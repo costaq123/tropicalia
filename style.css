@@ -72,25 +72,6 @@ body {
   background-color: #fff;
 }
 
-/* Estilos para o menu no mobile */
-@media (max-width: 768px) {
-  .cabecalho__hamburguer {
-    display: flex;
-  }
-
-  .cabecalho__lista {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .cabecalho__lista--ativo {
-    display: flex;
-  }
-}
-
 /* Seções */
 section {
   padding: 40px 20px;
@@ -128,6 +109,38 @@ p {
 
 .galeria-item img:hover {
   transform: scale(1.1);
+}
+
+/* Contato */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 1.1rem;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #444;
 }
 
 /* Rodapé */

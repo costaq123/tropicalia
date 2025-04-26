@@ -3,67 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeca Pagodinho - Site Oficial</title>
+    <title>Zeca Pagodinho</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Cabeçalho -->
     <header class="cabecalho">
-        <h1 class="cabecalho__titulo">Zeca Pagodinho</h1>
-        <nav class="cabecalho__menu" aria-label="Menu principal">
-            <button class="cabecalho__hamburguer" aria-label="Menu de navegação">
+        <div class="cabecalho__titulo">Zeca Pagodinho</div>
+        <nav class="cabecalho__menu">
+            <button class="cabecalho__hamburguer" aria-expanded="false">
                 <span class="cabecalho__linha"></span>
                 <span class="cabecalho__linha"></span>
                 <span class="cabecalho__linha"></span>
             </button>
             <ul class="cabecalho__lista">
-                <li class="cabecalho__item"><a class="cabecalho__link" href="#biografia">Biografia</a></li>
-                <li class="cabecalho__item"><a class="cabecalho__link" href="#discografia">Discografia</a></li>
-                <li class="cabecalho__item"><a class="cabecalho__link" href="#linha-do-tempo">Linha do Tempo</a></li>
-                <li class="cabecalho__item"><a class="cabecalho__link" href="#galeria">Galeria</a></li>
-                <li class="cabecalho__item"><a class="cabecalho__link" href="#contato">Contato</a></li>
+                <li class="cabecalho__item"><a href="#biografia" class="cabecalho__link">Biografia</a></li>
+                <li class="cabecalho__item"><a href="#discografia" class="cabecalho__link">Discografia</a></li>
+                <li class="cabecalho__item"><a href="#contato" class="cabecalho__link">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seções do site -->
+    <!-- Seção Biografia -->
     <section id="biografia">
         <h2>Biografia</h2>
-        <p>Texto sobre a biografia do Zeca Pagodinho...</p>
+        <p>Zeca Pagodinho, nome artístico de Jessé Gomes da Silva Filho, é um cantor e compositor brasileiro. Nascido em 4 de fevereiro de 1959, no Rio de Janeiro, ele é um dos maiores nomes do samba e do pagode no Brasil. Zeca começou sua carreira ainda na juventude, influenciado pela música tradicional brasileira, e logo se destacou por sua voz marcante e carisma no palco.</p>
+        <p>Ao longo de sua carreira, Zeca Pagodinho lançou diversos álbuns e conquistou inúmeros prêmios. Suas músicas, sempre recheadas de ritmos envolventes e letras que falam sobre a vida cotidiana e as tradições do samba, são cantadas por fãs de todas as idades. Seu estilo único mistura o samba de raiz com influências contemporâneas, criando uma sonoridade incomparável.</p>
+        <p>Além da carreira musical, Zeca Pagodinho é também um ícone cultural no Brasil, sendo amplamente reconhecido por sua simplicidade e por sua relação com as raízes do samba.</p>
     </section>
 
+    <!-- Seção Discografia -->
     <section id="discografia">
         <h2>Discografia</h2>
-        <p>Informações sobre os álbuns e músicas...</p>
-    </section>
-
-    <section id="linha-do-tempo">
-        <h2>Linha do Tempo</h2>
-        <p>Detalhes sobre a carreira e evolução de Zeca Pagodinho...</p>
-    </section>
-
-    <!-- Galeria -->
-    <section id="galeria">
-        <h2>Galeria</h2>
         <div class="galeria-container">
             <div class="galeria-item">
-                <img src="imagens/zeca1.jpg" alt="Zeca Pagodinho no palco">
-                <p>Legenda da foto 1</p>
+                <img src="https://via.placeholder.com/300x300?text=Álbum+1" alt="Álbum 1">
+                <p>Álbum 1</p>
             </div>
             <div class="galeria-item">
-                <img src="imagens/zeca2.jpg" alt="Zeca Pagodinho com a banda">
-                <p>Legenda da foto 2</p>
+                <img src="https://via.placeholder.com/300x300?text=Álbum+2" alt="Álbum 2">
+                <p>Álbum 2</p>
             </div>
             <div class="galeria-item">
-                <img src="imagens/zeca3.jpg" alt="Zeca Pagodinho com fãs">
-                <p>Legenda da foto 3</p>
+                <img src="https://via.placeholder.com/300x300?text=Álbum+3" alt="Álbum 3">
+                <p>Álbum 3</p>
             </div>
         </div>
     </section>
 
+    <!-- Seção Contato -->
     <section id="contato">
         <h2>Contato</h2>
-        <p>Formas de contato com a equipe de Zeca Pagodinho...</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
     <footer>
