@@ -12,106 +12,52 @@
 /* Corpo */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
+    padding: 0;
 }
 
 /* Cabeçalho */
 .cabecalho {
-    background-color: #1E3A8A; /* azul escuro */
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: #1E3A8A; /* Azul escuro */
+    color: white;
     text-align: center;
+    padding: 20px;
 }
 
 .cabecalho__titulo {
     font-family: 'Lemon', sans-serif; /* Fonte Lemon para o título */
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    color: #FFD700; /* Dourado */
 }
 
 .cabecalho__menu {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .cabecalho__lista {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
-.cabecalho__link {
-    color: #FFD700; /* dourado */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.cabecalho__link:hover {
-    text-decoration: underline;
-}
-
-/* Conteúdo principal */
-.conteudo-principal {
-    margin-top: 30px;
-}
-
-/* Seções */
-.conteudo-principal__secao {
-    background-color: #ffffff;
-    margin-bottom: 30px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.conteudo-principal__titulo {
-    color: #1E3A8A;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.conteudo-principal__paragrafo {
+.cabecalho__item {
     font-size: 1.1rem;
 }
 
-.conteudo-principal__imagem {
-    width: 100%;
-    max-width: 500px;
-    display: block;
-    margin: 0 auto 20px;
-    border-radius: 10px;
+.cabecalho__link {
+    text-decoration: none;
+    color: #FFD700; /* Dourado */
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-/* Galeria */
-.galeria {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
+.cabecalho__link:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
-.galeria__imagem {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-}
-
-/* Rodapé */
-.rodape {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.rodape__link {
-    color: #1E3A8A;
-}
-
-.rodape__link:hover {
-    text-decoration: underline;
-}
+/* Conteúd*
