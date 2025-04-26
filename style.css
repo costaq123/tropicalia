@@ -16,11 +16,7 @@ body {
   color: #333;
 }
 
-h1, h2 {
-  font-family: 'Lemon', cursive;
-}
-
-/* Estilo do cabeçalho */
+/* Cabeçalho */
 .cabecalho {
   background-color: #333;
   color: #fff;
@@ -31,6 +27,7 @@ h1, h2 {
 }
 
 .cabecalho__titulo {
+  font-family: 'Lemon', cursive;
   font-size: 2.5rem;
 }
 
@@ -75,16 +72,6 @@ h1, h2 {
   background-color: #fff;
 }
 
-/* Menu fixo */
-.cabecalho--fixo {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: #333;
-  padding: 10px 0;
-}
-
 /* Estilos para o menu no mobile */
 @media (max-width: 768px) {
   .cabecalho__hamburguer {
@@ -102,4 +89,52 @@ h1, h2 {
   .cabecalho__lista--ativo {
     display: flex;
   }
+}
+
+/* Seções */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Lemon', cursive;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Galeria */
+.galeria-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.galeria-item {
+  width: 30%;
+}
+
+.galeria-item img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.galeria-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
 }

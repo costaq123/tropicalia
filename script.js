@@ -1,31 +1,43 @@
-// Script para scroll suave ao clicar nos links do menu
-document.querySelectorAll('.cabecalho__link').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Menu fixo após rolar a página
-window.onscroll = function() {fixarMenu()};
-
-var menu = document.querySelector('.cabecalho');
-var sticky = menu.offsetTop;
-
-function fixarMenu() {
-  if (window.pageYOffset >= sticky) {
-    menu.classList.add("cabecalho--fixo");
-  } else {
-    menu.classList.remove("cabecalho--fixo");
-  }
-}
-
-// Alternando o menu hambúrguer no mobile
-const menuHamburguer = document.querySelector('.cabecalho__hamburguer');
-const menuMobile = document.querySelector('.cabecalho__lista');
-
-menuHamburguer.addEventListener('click', () => {
-  menuMobile.classList.toggle('cabecalho__lista--ativo');
-});
+document.addEventListener('DOMContentLoaded', function(){
+    const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade')
+    const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade')
+ 
+    botaoDeAcessibilidade.addEventListener('click', function (){
+     botaoDeAcessibilidade.classList.toggle('rotacao-botao');
+     opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
+ 
+     const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
+     botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
+   
+    })
+ 
+     const aumentaFonteBotao = document.getElementById('aumentar-fonte');
+     const diminuiFonteBotao = document.getElementById('diminuir-fonte');
+     
+     const alternaContraste = document.getElementById('alterna-contraste')
+ 
+     let tamanhoAtualFonte = 1;
+ 
+     aumentaFonteBotao.addEventListener('click', function(){
+         tamanhoAtualFonte += 0.1;
+         document.body.style.fontSize = `${tamanhoAtualFonte}rem`
+ 
+     })
+ 
+     diminuiFonteBotao.addEventListener('click', function(){
+         tamanhoAtualFonte -= 0.1;
+         document.body.style.fontSize = `${tamanhoAtualFonte}rem`
+ 
+     })
+ 
+     alternaContraste.addEventListener('click', function(){
+         document.body.classList.toggle('alto-contraste')
+     })
+ 
+ 
+ })
+ 
+ ScrollReveal().reveal('#inicio', { delay: 500 });
+ ScrollReveal().reveal('#tropicalia', { delay: 500 });
+ ScrollReveal().reveal('#galeria', { delay: 500 });
+ ScrollReveal().reveal('#contato', { delay: 500 });
