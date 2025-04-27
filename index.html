@@ -1,77 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeca Pagodinho</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <title>Zeca Pagodinho - História e Música</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Importação de fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Lemon&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Cabeçalho -->
+
     <header class="cabecalho">
-        <div class="cabecalho__titulo">Zeca Pagodinho</div>
-        <nav class="cabecalho__menu">
-            <button class="cabecalho__hamburguer" aria-expanded="false">
-                <span class="cabecalho__linha"></span>
-                <span class="cabecalho__linha"></span>
-                <span class="cabecalho__linha"></span>
-            </button>
-            <ul class="cabecalho__lista">
-                <li class="cabecalho__item"><a href="#biografia" class="cabecalho__link">Biografia</a></li>
-                <li class="cabecalho__item"><a href="#discografia" class="cabecalho__link">Discografia</a></li>
-                <li class="cabecalho__item"><a href="#contato" class="cabecalho__link">Contato</a></li>
-            </ul>
+        <img class="cabecalho__logo" src="imagens/logo-zeca.png" alt="Logo Zeca Pagodinho">
+        <nav class="cabecalho__navegacao">
+            <a href="#inicio">Início</a>
+            <a href="#biografia">Biografia</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#linha-do-tempo">Linha do Tempo</a>
+            <a href="#contato">Contato</a>
         </nav>
+
+        <div class="cabecalho__acessibilidade">
+            <button id="botao-acessibilidade" aria-label="Abrir opções de acessibilidade" aria-expanded="false">♿</button>
+            <ul id="opcoes-acessibilidade" class="acessibilidade__opcoes">
+                <li><button id="aumentar-fonte">A+</button></li>
+                <li><button id="diminuir-fonte">A-</button></li>
+                <li><button id="alterna-contraste">Alto Contraste</button></li>
+            </ul>
+        </div>
     </header>
 
-    <!-- Seção Biografia -->
-    <section id="biografia">
-        <h2>Biografia</h2>
-        <p>Zeca Pagodinho, nome artístico de Jessé Gomes da Silva Filho, é um cantor e compositor brasileiro. Nascido em 4 de fevereiro de 1959, no Rio de Janeiro, ele é um dos maiores nomes do samba e do pagode no Brasil. Zeca começou sua carreira ainda na juventude, influenciado pela música tradicional brasileira, e logo se destacou por sua voz marcante e carisma no palco.</p>
-        <p>Ao longo de sua carreira, Zeca Pagodinho lançou diversos álbuns e conquistou inúmeros prêmios. Suas músicas, sempre recheadas de ritmos envolventes e letras que falam sobre a vida cotidiana e as tradições do samba, são cantadas por fãs de todas as idades. Seu estilo único mistura o samba de raiz com influências contemporâneas, criando uma sonoridade incomparável.</p>
-        <p>Além da carreira musical, Zeca Pagodinho é também um ícone cultural no Brasil, sendo amplamente reconhecido por sua simplicidade e por sua relação com as raízes do samba.</p>
-    </section>
+    <main>
+        <section class="inicio" id="inicio">
+            <h1 class="inicio__titulo">Zeca Pagodinho</h1>
+            <p class="inicio__paragrafo">O mestre do samba e do bom humor brasileiro.</p>
+            <img class="inicio__imagem" src="imagens/zeca-inicio.jpg" alt="Zeca Pagodinho sorrindo com chapéu">
+        </section>
 
-    <!-- Seção Discografia -->
-    <section id="discografia">
-        <h2>Discografia</h2>
-        <div class="galeria-container">
-            <div class="galeria-item">
-                <img src="https://via.placeholder.com/300x300?text=Álbum+1" alt="Álbum 1">
-                <p>Álbum 1</p>
+        <section class="biografia" id="biografia">
+            <h2 class="biografia__titulo">Biografia</h2>
+            <p class="biografia__paragrafo">
+                Jessé Gomes da Silva Filho, mais conhecido como Zeca Pagodinho, é um cantor e compositor brasileiro, referência no samba e no pagode.
+                Com sua carreira iniciada nos anos 1980, Zeca conquistou o público com seu carisma e autenticidade.
+                <br><br>
+                Fonte: Wikipédia
+            </p>
+            <img class="biografia__imagem" src="imagens/zeca-biografia.jpg" alt="Zeca Pagodinho cantando em um show">
+        </section>
+
+        <section class="galeria" id="galeria">
+            <h2 class="galeria__titulo">Galeria de Fotos</h2>
+            <div class="galeria__imagens">
+                <img src="imagens/galeria1.jpg" alt="Zeca Pagodinho sorrindo com fãs">
+                <img src="imagens/galeria2.jpg" alt="Zeca tocando cavaquinho">
+                <img src="imagens/galeria3.jpg" alt="Zeca no palco com banda de samba">
+                <img src="imagens/galeria4.jpg" alt="Zeca Pagodinho brindando com cerveja">
+                <img src="imagens/galeria5.jpg" alt="Zeca posando em um bar tradicional do Rio">
             </div>
-            <div class="galeria-item">
-                <img src="https://via.placeholder.com/300x300?text=Álbum+2" alt="Álbum 2">
-                <p>Álbum 2</p>
-            </div>
-            <div class="galeria-item">
-                <img src="https://via.placeholder.com/300x300?text=Álbum+3" alt="Álbum 3">
-                <p>Álbum 3</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Seção Contato -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+        <section class="linha-do-tempo" id="linha-do-tempo">
+            <h2 class="linha-do-tempo__titulo">Linha do Tempo</h2>
+            <ul class="linha-do-tempo__lista">
+                <li><strong>1980:</strong> Início da carreira em rodas de samba no Rio de Janeiro.</li>
+                <li><strong>1986:</strong> Lançamento do primeiro disco "Zeca Pagodinho".</li>
+                <li><strong>1990:</strong> Sucesso nacional com "Deixa a Vida Me Levar".</li>
+                <li><strong>2000:</strong> Ganhador de Grammy Latino de Melhor Álbum de Samba.</li>
+                <li><strong>2020:</strong> Celebrando 40 anos de carreira com shows especiais.</li>
+            </ul>
+        </section>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+        <section class="contato" id="contato">
+            <h2 class="contato__titulo">Contato</h2>
+            <p class="contato__paragrafo">
+                Quer saber mais sobre o Zeca Pagodinho? Entre em contato!
+            </p>
+            <form class="contato__formulario">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+    </main>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>Desenvolvido por Nicole e Yasmin</p>
+    <footer class="rodape">
+        <p>Desenvolvido por Nicole e Yasmin | Imagens: Wikimedia Commons</p>
     </footer>
 
     <script src="script.js"></script>
