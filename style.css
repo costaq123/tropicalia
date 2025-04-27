@@ -35,9 +35,12 @@ a {
 header.cabecalho {
     background-color: var(--cor-secundaria);
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-around;
 }
 
 .cabecalho__logo {
@@ -85,7 +88,11 @@ header.cabecalho {
     margin: 0.5rem;
 }
 
-.inicio, .biografia, .galeria, .linha-do-tempo, .contato {
+.inicio,
+.biografia,
+.galeria,
+.linha-do-tempo,
+.contato {
     padding: 3rem 1rem;
     text-align: center;
 }
@@ -102,13 +109,17 @@ header.cabecalho {
     margin-top: 1rem;
 }
 
-.biografia__titulo, .galeria__titulo, .linha-do-tempo__titulo, .contato__titulo {
+.biografia__titulo,
+.galeria__titulo,
+.linha-do-tempo__titulo,
+.contato__titulo {
     font-size: 2rem;
     color: var(--cor-destaque);
     margin-bottom: 1rem;
 }
 
-.biografia__paragrafo, .contato__paragrafo {
+.biografia__paragrafo,
+.contato__paragrafo {
     max-width: 600px;
     margin: 0 auto 2rem;
     line-height: 1.6;
